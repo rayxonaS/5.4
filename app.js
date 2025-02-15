@@ -1,0 +1,20 @@
+const divWrapper = document.createElement("div");
+const avatarImage = document.createElement("img");
+avatarImage.src = "https://picsum.photos/100/100";
+avatarImage.width = "200";
+avatarImage.height = "200";
+const href = document.createElement("p");
+href.textContent = "Learning";
+const text = document.createElement("p");
+text.textContent = "Published 21 Dec 2023";
+const heading = document.createElement("h1");
+heading.textContent = "HTML & CSS foundations";
+const pragraph = document.createElement("p");
+pragraph.textContent =
+  "These languages are the backbone of every website, defining structure, content, and presentation.";
+const image = document.createElement("img");
+image.src = "https://picsum.photos/50/50";
+const subtitle = document.createElement("p");
+subtitle.textContent = "Greg Hooper";
+divWrapper.append(avatarImage, href, text, heading, pragraph, image, subtitle);
+document.body.appendChild(divWrapper);
